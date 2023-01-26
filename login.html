@@ -7,13 +7,15 @@
     <body>
 		<center>
 			<img src="plane.png" width="250" height="300">
-			<h1 align="center" style="margin: 0px; font-size: 50pt">You are welcome</h1>
-			<br><br><br><br>
-			<input type="text" name="username" placeholder="username"style="font-size:20pt">
-			<br><br>
-			<input type="password" name="password" placeholder="password" style="font-size:20pt">
-			<br><br>
-			<button type="button" style="font-size:20pt">sign in</button>
+			<h1 style="margin: 0px; font-size: 50pt">You are welcome</h1>
+			<form enctype="multipart/form-data" method="post" action="http://localhost:8080/login">
+				<br><br><br><br>
+				<input type="text" name="username" placeholder="username" style="font-size:20pt">
+				<br><br>
+				<input type="password" name="password" placeholder="password" style="font-size:20pt">
+				<br><br>
+				<button type="button" style="font-size:20pt">sign in</button>
+			</form>
 		</center>
 	<body>	
 </html>
