@@ -1,0 +1,17 @@
+[
+  {
+    "imgPath": "img/.jpg",
+    "name": "Red pajamas",
+    "currencyCode": "USD"
+  },
+  {
+    "imgPath": "img/.jpg",
+    "name": "Black body",
+    "currencyCode": "USD"
+  },
+  {
+    "imgPath": "img/.jpg",
+    "name": "Dark blue pajamas",
+    "currencyCode": "USD"
+  }
+]
