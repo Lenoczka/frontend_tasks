@@ -66,3 +66,77 @@ while (initialBalance > 0) {
         alert("5 Win " + resultRoulette.value + "" + resultRoulette.type   + ", Your " +  betEvenOdd + " loss, " + "balance left: " + initialBalance);
     }
 }
+
+//Run the game
+runGame()
+
+function runGame() {
+    let currentBalance = prompt("How much money do you have?");
+
+    while (currentBalance > 0) {
+        var bet = makeBet(currentBalance)
+
+        //say bets maked...
+
+        var rouletteResult = rollRoulette()
+
+        var isBetWon = checkBet(bet, rouletteResult)
+
+        //adjusting balance
+        if (isBetWon) {
+
+        } else {
+
+        }
+    }
+}
+
+//enum!!!!
+var betTypes = [
+    "strait",
+    "split",
+    "street",
+    "corner",
+    //etc
+]
+
+//FOR EACH BET TYPE
+function isStraitValid(bet) {
+    return boolean
+}
+
+//FOR EACH BET TYPE
+function isStraitWon(rouletteResult, bet) {
+    return boolean
+}
+
+function makeBet(currentBalance) {
+    //explain possible bets
+    alert()
+    //ask amount, bet type, fact bet value
+    var bet = {
+        type: betType,
+        value: betValue,
+        amount: betAmount,
+    }
+    //validate made bet
+    isStraitValid()
+
+    return bet
+}
+
+function rollRoulette() {
+    // rolling roulette
+
+    return resultRoulette
+}
+
+function checkBet(bet, rouletteResult) {
+    //verify bet status
+    isStraitWon()
+
+    return boolean
+}
+
+
+
