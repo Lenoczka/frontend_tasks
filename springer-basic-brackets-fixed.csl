@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="sort-only" default-locale="en-US">
   <info>
-    <title>Springer - Basic (numeric, brackets) - All Authors</title>
-    <id>http://www.zotero.org/styles/springer-basic-brackets</id>
-    <link href="http://www.zotero.org/styles/springer-basic-brackets" rel="self"/>
-    <link href="http://www.zotero.org/styles/springer-basic-author-date" rel="template"/>
-    <link href="http://www.springer.com/cda/content/document/cda_downloaddocument/instruct-authors-e.pdf" rel="documentation"/>
-    <link href="http://www.springer.com/cda/content/document/cda_downloaddocument/manuscript-guidelines-1.0.pdf" rel="documentation"/>
-    <link href="http://www.springer.com/cda/content/document/cda_downloaddocument/Key_Style_Points_1.0.pdf" rel="documentation"/>
-    <author>
-      <name>Charles Parnot</name>
-      <email>charles.parnot@gmail.com</email>
-      <uri>http://twitter.com/cparnot</uri>
-    </author>
+    <title>Springer Basic Fixed</title>
+    <id>http://www.example.com/styles/springer-basic-fixed</id>
+    <link href="http://www.example.com/styles/springer-basic-fixed" rel="self"/>
     <category citation-format="numeric"/>
-    <summary>Springer Numbered Style — все авторы без сокращения et al, пробел после двоеточия в томе.</summary>
-    <updated>2025-05-18T00:55:38+00:00</updated>
+    <summary>Springer Basic — все авторы, пробел после двоеточия</summary>
+    <updated>2026-01-01T00:00:00+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale>
@@ -105,12 +96,10 @@
           <choose>
             <if variable="page volume" match="any">
               <group prefix=". " delimiter=". ">
-                <group delimiter=" ">
-                  <text variable="container-title" form="short" strip-periods="true"/>
-                  <group>
-                    <text variable="volume" suffix=": "/>
-                    <text variable="page"/>
-                  </group>
+                <group>
+                  <text variable="container-title" form="short" strip-periods="true" suffix=" "/>
+                  <text variable="volume" suffix=": "/>
+                  <text variable="page"/>
                 </group>
                 <text prefix="https://doi.org/" variable="DOI"/>
               </group>
@@ -149,7 +138,7 @@
         <else>
           <group prefix=". " delimiter=" ">
             <text variable="container-title" form="short"/>
-            <group delimiter=":">
+            <group delimiter=": ">
               <text variable="volume"/>
               <text variable="page"/>
             </group>
